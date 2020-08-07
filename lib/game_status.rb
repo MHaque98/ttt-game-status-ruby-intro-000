@@ -27,18 +27,10 @@ def won?(board)
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
      return win_combo
-    elsif (board[win_index1] == "O" && board[win_index2] == "O" && board[win_index3] == "O")
-     return win_combo
-    else
-     return false
-   end
-  end
-  if (board.none? {|position| position == " " || position == "" || position == nil})
-     return false
-   elsif (board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] || board == ["","","","","","","","",""]) #
-     return false
    else
      return false
    end
+  end
+
 
 end
