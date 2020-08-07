@@ -58,6 +58,9 @@ def winner(board)
   win_combo = won?(board)
   if won?(board)
     token = win_combo[0]
-    if token == []
+    if board[token] == 'X'
+      return "X"
+    else
+      return "O"
   end
 end
