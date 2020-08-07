@@ -27,12 +27,6 @@ def won?(board)
        return win_combo
      end
    end
-   if (board.none? {|position| position == " " || position == "" || position == nil})
-     return false
-   elsif (board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] || board == ["","","","","","","","",""]) #
-     return false
-   else
-     return false
-   end
+
 
 end
