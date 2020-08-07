@@ -53,3 +53,11 @@ def over?(board)
     return true
   end
 end
+
+def winner(board)
+  win_combo = won?(board)
+  if won?(board)
+    token = win_combo[0]
+    if token == []
+  end
+end
